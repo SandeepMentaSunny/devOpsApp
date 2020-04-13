@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Tool</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <section class="tabs-container">
+        <div class="notification hide"></div>
+        <ul class="tabs-header">
+          <li class="default-tab"><a href="javascript:;">Login</a></li>
+          <li><a href="javascript:;">Register</a></li>
+        </ul>
+        <ul class="tabs">
+          <li class="tab">
+              <form class="login-form" method="post">
+                  <div class="form-group">
+                      <label for="emailId">Email ID*</label>
+                      <input type="email" class="form-control" name="emailId" id="emailId" required>
+                      <p class="error login-emailId-required hide">This is required field</p>
+                      <p class="error login-emailId-valid hide">Please enter a valid Email Address</p>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password*</label>
+                      <input type="password" class="form-control" name="password" id="password" required>
+                      <p class="error login-password-required hide">This is required field</p>
+                      <p class="error login-password-valid hide">Please enter the password length greater than 5 characters</p>
+                  </div>
+                  <a class="login-btn" href="javascript:;">Login</a>
+              </form>
+          </li>
+          <li class="tab">
+            <form class="register-form" method="post">
+                <div class="form-group">
+                    <label for="registerEmailID">Email ID*</label>
+                    <input type="email" class="form-control" name="emailId" id="registerEmailID" required>
+                    <p class="error register-emailId-required hide">This is required field</p>
+                    <p class="error register-emailId-valid hide">Please enter a valid Email Address</p>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password*</label>
+                    <input type="password" class="form-control" name="password" id="registerPassword" required>
+                    <p class="error register-password-required hide">This is required field</p>
+                    <p class="error register-password-valid hide">Please enter the password length greater than 5 characters</p>
+                </div>
+                <div class="form-group">
+                    <label for="registerRePassword">Re-Type Password*</label>
+                    <input type="password" class="form-control" name="rePassword" id="registerRePassword" required>
+                    <p class="error register-re-password-required hide">This is required field</p>
+                    <p class="error register-re-password-valid hide">Please enter the Re-Type Password length greater than 5 characters</p>
+                    <p class="error register-passwords-mismatch hide">Passwords are not match.</p>
+                </div>
+                <a href="javascript:;" class="register-btn">Register</a>
+            </form>
+          </li>
+        </ul>
+      </div>
+    <script src="../scripts/app.js" type="module" defer></script>
+</body>
+</html>
